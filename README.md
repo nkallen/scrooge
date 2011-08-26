@@ -27,16 +27,16 @@ The state (as of July 2011):
 
 - The code generator is basically complete, and has been used to generate the
   thrift interface for a test server. You can find that server here:
-
+  
       git clone http://code.lag.net/sqrt2
-
+  
   The "master" branch uses sbt-thrift (apache thrift with scala wrappers) and
   the "scrooge" branch uses scrooge.
 
 - To run the code generator, just do:
-
+  
       $ ./scrooge \<thrift-file\>
-
+  
   and it will spew all the generated code to stdout. This is not intended to
   be the final behavior -- just a stopgap. It really should take some options
   and write out several files to a single path.

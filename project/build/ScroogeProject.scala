@@ -23,6 +23,9 @@ class ScroogeProject(info: ProjectInfo) extends StandardServiceProject(info)
 
   val libThrift = "thrift" % "libthrift" % "0.5.0"
 
+  val scopt = "com.github.scopt" %% "scopt" % "1.1.1"
+
+  // for tests:
   val specs = "org.scala-tools.testing" % "specs_2.8.1" % "1.6.7" % "test" withSources()
   val jmock = "org.jmock" % "jmock" % "2.4.0" % "test"
   val hamcrest_all = "org.hamcrest" % "hamcrest-all" % "1.1" % "test"
